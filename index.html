@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nubolix Solutions — Cloud, DevOps & Security</title>
+  <meta name="description" content="Nubolix Solutions —  AWS Cloud Architecture, Cybersecurity and DevOps Automation. Advanced penetration testing, zero trust security, CI/CD, IaC and observability for startups & enterprises.">
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root{
+      --primary:#374151;
+      --accent:#f97316;
+      --muted:#6b7280;
+      --bg:#f3f4f6;
+      --card:#ffffff;
+      --radius:12px;
+      --max-width:1100px;
+      --container-padding:20px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#1f2937;line-height:1.5}
+    .site{max-width:var(--max-width);margin:0 auto;padding:32px var(--container-padding)}
+
+    header.hero{background:linear-gradient(180deg,rgba(55,65,81,0.95),rgba(55,65,81,0.88));color:#fff;padding:48px 0;border-bottom:4px solid rgba(0,0,0,0.04)}
+    .hero .inner{display:flex;align-items:center;gap:28px;max-width:var(--max-width);margin:0 auto;padding:0 20px}
+    .logo-wrap{display:flex;align-items:center;gap:16px}
+    .logo-wrap img{width:120px;height:120px;object-fit:contain;border-radius:10px;background:#fff;padding:8px}
+    .hero h1{margin:0;font-size:28px;letter-spacing:-0.5px}
+    .hero p{margin:8px 0 0;color:rgba(255,255,255,0.9);font-size:16px}
+    .slogan{margin-top:10px;font-size:18px;font-weight:600;color:#fff}
+    .cta-group{margin-top:18px;display:flex;gap:12px}
+    .btn{display:inline-block;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.18);color:#fff}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px}
+    .card{background:var(--card);padding:22px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(16,24,40,0.06)}
+    h2.section-title{color:var(--primary);margin:0 0 14px}
+    .muted{color:var(--muted)}
+    ul.service-list{padding:0;margin:0;list-style:none;display:grid;gap:10px}
+    ul.service-list li{padding-left:18px;position:relative}
+    ul.service-list li:before{content:"\2713";position:absolute;left:0;color:var(--primary);font-weight:700}
+
+    .services-diagram{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px;text-align:center}
+    .services-diagram .diagram-card{background:var(--card);padding:24px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(16,24,40,0.06)}
+    .services-diagram img{width:48px;height:48px;margin-bottom:12px}
+    .services-diagram h3{margin:8px 0;color:var(--primary)}
+
+    .case-list{display:flex;flex-direction:column;gap:12px}
+    .case-item{border-left:3px solid var(--primary);padding:12px 14px;background:linear-gradient(180deg,#fff,#f9fafb);border-radius:8px}
+    .case-item small{color:var(--muted)}
+
+    .contact-card p{margin:8px 0}
+    .small{font-size:13px;color:var(--muted)}
+
+    footer{margin-top:36px;padding:18px 0;text-align:center;color:var(--muted);font-size:14px}
+
+    @media (max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}.services-diagram{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:22px}}
+    @media (max-width:680px){.grid{grid-template-columns:1fr}.services-diagram{grid-template-columns:1fr}.hero .inner{flex-direction:column;align-items:flex-start}.logo-wrap img{width:100px;height:100px}.hero p{font-size:15px}.slogan{font-size:16px}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="inner">
+      <div class="logo-wrap">
+        <img src="logo.png" alt="Nubolix Solutions logo">
+      </div>
+      <div>
+        <h1>Building Resilient Cloud. Empowering DevOps. Enhancing Security.</h1>
+        <p>We help startups and enterprises design secure AWS cloud architectures, automate DevOps pipelines, and validate systems through real-world penetration testing.</p>
+        <div class="slogan">Innovate • Secure • Scale</div>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="mailto:hello@nubolix.com?subject=Schedule%20Free%20Audit">Schedule Free Audit</a>
+          <a class="btn btn-ghost" href="mailto:hello@nubolix.com?subject=Business%20Inquiry">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="site">
+    <section aria-labelledby="services">
+      <h2 id="services" class="section-title">Our Core Services</h2>
+      <div class="services-diagram">
+        <div class="diagram-card">
+          <img src="cloud-icon.png" alt="Cloud Architecture Icon">
+          <h3>AWS Cloud Architecture & Security</h3>
+          <p>Enterprise-grade cloud designs, zero trust networking, and cloud-native SIEM for resilient, compliant environments.</p>
+        </div>
+        <div class="diagram-card">
+          <img src="security-icon.png" alt="Cybersecurity Icon">
+          <h3>Cybersecurity & Penetration Testing</h3>
+          <p>Advanced pentesting, red teaming, threat modeling, and regulatory compliance readiness for secure operations.</p>
+        </div>
+        <div class="diagram-card">
+          <img src="devops-icon.png" alt="DevOps Automation Icon">
+          <h3>DevOps & Automation</h3>
+          <p>CI/CD pipelines, IaC, service mesh, configuration management, and observability with Amazon Q insights.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>AWS Cloud Architecture & Security</h3>
+          <p class="small">Design secure, scalable, cost-optimized AWS environments with advanced governance, resilience, and security models.</p>
+          <ul class="service-list">
+            <li>Enterprise-Grade Architecture Design (Multi-Region, Multi-AZ)</li>
+            <li>Automated Landing Zone & Control Tower Implementations</li>
+            <li>Zero Trust Networking & Micro-Segmentation in AWS</li>
+            <li>Cost Optimization, FinOps & Cloud Economics Modeling</li>
+            <li>High Availability, Chaos Engineering & Disaster Recovery</li>
+            <li>Cloud-Native SIEM & Threat Detection (Security Hub, GuardDuty, OpenSearch)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Cybersecurity & Penetration Testing</h3>
+          <p class="small">Advanced penetration testing, red team operations, and zero trust security assessments for cloud and enterprise systems.</p>
+          <ul class="service-list">
+            <li>Web & API Pentesting (OWASP, CVSS, Business Logic Testing)</li>
+            <li>Cloud Security Red Teaming (Privilege Escalation, Misconfig Exploits, Data Exfiltration Simulation)</li>
+            <li>Advanced Threat Modeling & Attack Simulation (MITRE ATT&CK, STRIDE)</li>
+            <li>DevSecOps Pipeline Security (Supply Chain Security, Secrets Scanning, SBOM Analysis)</li>
+            <li>Zero Trust Security Architecture Reviews (BeyondCorp, Identity-Centric Controls)</li>
+            <li>Compliance & Regulatory Readiness (PCI-DSS, HIPAA, ISO 27001, SOC2, GDPR)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>DevOps & Automation</h3>
+          <p class="small">End-to-end automation, CI/CD, IaC, and modern operations to deliver faster, more secure, and reliable software.</p>
+          <ul class="service-list">
+            <li>Enterprise CI/CD Pipelines (Jenkins, GitHub Actions, GitLab, CodePipeline)</li>
+            <li>Infrastructure as Code (Terraform, CloudFormation, AWS CDK)</li>
+            <li>Kubernetes (EKS) & Service Mesh (Istio, Linkerd)</li>
+            <li>Progressive Delivery (Blue-Green, Canary, Feature Flags)</li>
+            <li>Configuration Management (Ansible, AWS SSM)</li>
+            <li>Monitoring & Observability (Prometheus, Grafana, Amazon Q)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:30px;" aria-labelledby="cases">
+      <h2 id="cases" class="section-title">Case Studies</h2>
+      <div class="card case-list">
+        <div class="case-item">
+          <strong>AWS Cost Optimization & Security Audit</strong>
+        </div>
+        <div class="case-item">
+          <strong>Kubernetes & Docker Deployment</strong>
+        </div>
+        <div class="case-item">
+          <strong>Cloud Monitoring & Alerts</strong>
+        </div>
+        <div class="case-item">
+          <strong>Serverless Architecture Setup</strong>
+        </div>
+        <div class="case-item">
+          <strong>Hybrid Cloud Setup (On-Prem + AWS)</strong>
+        </div>
+        <p class="small" style="margin-top:10px;"><em>Want full details? Email <a href="mailto:hello@nubolix.com">hello@nubolix.com</a> and we’ll share our detailed case studies.</em></p>
+      </div>
+    </section>
+
+    <section style="margin-top:30px;" aria-labelledby="about">
+      <h2 id="about" class="section-title">About Us</h2>
+      <div class="card about">
+        <p>
+          Nubolix Solutions is a global consulting startup specializing in <strong> AWS Cloud Architecture, Cybersecurity, and DevOps Automation</strong>.
+          We help startups and enterprises build secure, scalable, and cost-efficient cloud systems while ensuring their applications and infrastructure are resilient against real-world threats.
+          With deep expertise in penetration testing, cloud security, and automation, Nubolix Solutions is your trusted partner for digital transformation.
+        </p>
+        <p><strong>Our Mission:</strong> To empower organizations worldwide with secure, automated, and scalable cloud solutions that accelerate innovation and ensure long-term resilience.</p>
+      </div>
+    </section>
+
+    <section style="margin-top:30px;" aria-labelledby="contact">
+      <h2 id="contact" class="section-title">Contact & Business Queries</h2>
+      <div class="card contact-card">
+        <h3>Get in touch</h3>
+        <p>Email: <a href="mailto:hello@nubolix.com">hello@nubolix.com</a></p>
+		<p>LinkedIn: <a href="https://www.linkedin.com/in/nubolix.solutions">Nubolix Solutions</a></p>
+        <p>Book a 30-minute free cloud/security audit: <a href="mailto:hello@nubolix.com?subject=Book%20Free%20Audit">Request Audit</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="site small">&copy; 2025 Nubolix Solutions Pvt Ltd. All rights reserved. | <a href="mailto:hello@nubolix.com">hello@nubolix.com</a></div>
+    </footer>
+  </main>
+</body>
+</html>
