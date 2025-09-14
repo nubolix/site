@@ -61,7 +61,7 @@
   </style>
 </head>
 <body>
-  <header class="hero">
+  <header class="hero" style="position:sticky;top:0;z-index:100;background:linear-gradient(180deg,rgba(55,65,81,0.95),rgba(55,65,81,0.88));">
     <div class="inner">
       <div class="logo-wrap">
         <img src="logo.png" alt="Nubolix Solutions logo">
@@ -81,61 +81,52 @@
   <main class="site">
     <section aria-labelledby="services">
       <h2 id="services" class="section-title">Our Core Services</h2>
+      
       <div class="services-diagram">
         <div class="diagram-card">
           <img src="cloud-icon.png" alt="Cloud Architecture Icon">
           <h3>AWS Cloud Architecture & Security</h3>
-          <p>Enterprise-grade cloud designs, zero trust networking, and cloud-native SIEM for resilient, compliant environments.</p>
+          <div class="card">
+            <p class="small">Design secure, scalable, cost-optimized AWS environments with advanced governance, resilience, and security models.</p>
+            <ul class="service-list">
+              <li>Enterprise-Grade Architecture Design (Multi-Region, Multi-AZ)</li>
+              <li>Automated Landing Zone & Control Tower Implementations</li>
+              <li>Zero Trust Networking & Micro-Segmentation in AWS</li>
+              <li>Cost Optimization, FinOps & Cloud Economics Modeling</li>
+              <li>High Availability, Chaos Engineering & Disaster Recovery</li>
+              <li>Cloud-Native SIEM & Threat Detection (Security Hub, GuardDuty, OpenSearch)</li>
+            </ul>
+          </div>
         </div>
         <div class="diagram-card">
           <img src="security-icon.png" alt="Cybersecurity Icon">
           <h3>Cybersecurity & Penetration Testing</h3>
-          <p>Advanced pentesting, red teaming, threat modeling, and regulatory compliance readiness for secure operations.</p>
+          <div class="card">
+            <p class="small">Advanced penetration testing, red team operations, and zero trust security assessments for cloud and enterprise systems.</p>
+            <ul class="service-list">
+              <li>Web & API Pentesting (OWASP, CVSS, Business Logic Testing)</li>
+              <li>Cloud Security Red Teaming (Privilege Escalation, Misconfig Exploits, Data Exfiltration Simulation)</li>
+              <li>Advanced Threat Modeling & Attack Simulation (MITRE ATT&CK, STRIDE)</li>
+              <li>DevSecOps Pipeline Security (Supply Chain Security, Secrets Scanning, SBOM Analysis)</li>
+              <li>Zero Trust Security Architecture Reviews (BeyondCorp, Identity-Centric Controls)</li>
+              <li>Compliance & Regulatory Readiness (PCI-DSS, HIPAA, ISO 27001, SOC2, GDPR)</li>
+            </ul>
+          </div>
         </div>
         <div class="diagram-card">
           <img src="devops-icon.png" alt="DevOps Automation Icon">
           <h3>DevOps & Automation</h3>
-          <p>CI/CD pipelines, IaC, service mesh, configuration management, and observability with Amazon Q insights.</p>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="card">
-          <h3>AWS Cloud Architecture & Security</h3>
-          <p class="small">Design secure, scalable, cost-optimized AWS environments with advanced governance, resilience, and security models.</p>
-          <ul class="service-list">
-            <li>Enterprise-Grade Architecture Design (Multi-Region, Multi-AZ)</li>
-            <li>Automated Landing Zone & Control Tower Implementations</li>
-            <li>Zero Trust Networking & Micro-Segmentation in AWS</li>
-            <li>Cost Optimization, FinOps & Cloud Economics Modeling</li>
-            <li>High Availability, Chaos Engineering & Disaster Recovery</li>
-            <li>Cloud-Native SIEM & Threat Detection (Security Hub, GuardDuty, OpenSearch)</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Cybersecurity & Penetration Testing</h3>
-          <p class="small">Advanced penetration testing, red team operations, and zero trust security assessments for cloud and enterprise systems.</p>
-          <ul class="service-list">
-            <li>Web & API Pentesting (OWASP, CVSS, Business Logic Testing)</li>
-            <li>Cloud Security Red Teaming (Privilege Escalation, Misconfig Exploits, Data Exfiltration Simulation)</li>
-            <li>Advanced Threat Modeling & Attack Simulation (MITRE ATT&CK, STRIDE)</li>
-            <li>DevSecOps Pipeline Security (Supply Chain Security, Secrets Scanning, SBOM Analysis)</li>
-            <li>Zero Trust Security Architecture Reviews (BeyondCorp, Identity-Centric Controls)</li>
-            <li>Compliance & Regulatory Readiness (PCI-DSS, HIPAA, ISO 27001, SOC2, GDPR)</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>DevOps & Automation</h3>
-          <p class="small">End-to-end automation, CI/CD, IaC, and modern operations to deliver faster, more secure, and reliable software.</p>
-          <ul class="service-list">
-            <li>Enterprise CI/CD Pipelines (Jenkins, GitHub Actions, GitLab, CodePipeline)</li>
-            <li>Infrastructure as Code (Terraform, CloudFormation,  CDK)</li>
-            <li>Kubernetes (EKS) & Service Mesh (Istio, Linkerd)</li>
-            <li>Progressive Delivery (Blue-Green, Canary, Feature Flags)</li>
-            <li>Configuration Management (Ansible,  SSM)</li>
-            <li>Monitoring & Observability (Prometheus, Grafana, Amazon Q)</li>
-          </ul>
+          <div class="card">
+            <p class="small">End-to-end automation, CI/CD, IaC, and modern operations to deliver faster, more secure, and reliable software.</p>
+            <ul class="service-list">
+              <li>Enterprise CI/CD Pipelines (Jenkins, GitHub Actions, GitLab, CodePipeline)</li>
+              <li>Infrastructure as Code (Terraform, CloudFormation,  CDK)</li>
+              <li>Kubernetes (EKS) & Service Mesh (Istio, Linkerd)</li>
+              <li>Progressive Delivery (Blue-Green, Canary, Feature Flags)</li>
+              <li>Configuration Management (Ansible,  SSM)</li>
+              <li>Monitoring & Observability (Prometheus, Grafana, Amazon Q)</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -158,6 +149,7 @@
         <div class="case-item">
           <strong>Hybrid Cloud Setup (On-Prem + Cloud)</strong>
         </div>
+        <a class="btn btn-primary" href="case_studies.html" style="margin-top:18px;display:inline-block;">View All Case Studies</a>
         <p class="small" style="margin-top:10px;"><em>Want full details? Email <a href="mailto:hello@nubolix.com">hello@nubolix.com</a> and we’ll share our detailed case studies.</em></p>
       </div>
     </section>
